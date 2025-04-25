@@ -1,0 +1,211 @@
+/* CSS BY Ella Villacreses */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root{
+    --midnight-blue: #1F2A44;
+    --olive-green: #76885B;
+    --champagne-gold: #E5C185;
+    --linen: #F8F4EC;
+    --dark-charcoal: #2B2B2B;
+    --soft-white: #FAF9F6;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+    font-family: Playfair Display;
+    background-color: var(--soft-white);
+    padding: 0;
+    margin: 1;
+    line-height: 2;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    font-family: Playfair Display;
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.header .logo {
+    width: 170px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.header .tag {
+    font-family: Playfair Display;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.horizontal {
+    font-family: Playfair Display;
+    margin: 0;
+    display: flex;           
+    justify-content: center;
+    list-style: none;
+    padding: 0 17rem;              
+    gap: 20rem; 
+    background-color: var(--champagne-gold);
+    color: var(--midnight-blue);
+    font-weight: bold;
+    width: 100%;
+}
+
+h2 {
+    font-family: Playfair Display;
+    font-size: 2rem;
+    color: var(--midnight-blue);
+    font-weight: none;
+    padding-left: 6rem;
+    text-align: left;
+    max-width: 1200px;
+}
+
+.about p{
+    font-family: Playfair Display;
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-family: Playfair Display;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.offerings-grid {
+    border-radius: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: Playfair Display;
+    display: grid;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 8rem;
+    background-color: var(--soft-white);
+    color: var(--soft-white);
+}
+
+.offering-card {
+    font-family: Playfair Display;
+    border-radius: 6px;
+    background-color: var(--olive-green);
+    border-radius: 2px;
+    text-align: left;
+    padding: 1rem;
+    box-shadow: 0 2px 6px var(--dark-charcoal);
+}
+
+.full-width {
+   grid-column:  1 / -1;
+}
+
+.gallery {
+    padding: 6rem;
+    text-align: left;
+}
+
+.gallery .title {
+    padding-left: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    font-style: italic;
+}
+
+.gallery-item {
+    background-color: var(--soft-white);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0rem;
+    text-align: center;
+    box-shadow: 0 4px 5px var(--dark-charcoal);
+}
+
+.gallery-grid img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.gallery-button {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.view {
+    background-color: var(--olive-green);
+    border-radius: 8px;
+    color: var(--soft-white);
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 13px;
+    font-family: Playfair Display;
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+footer .email {
+    font-family: Playfair Display;
+    background-color: var(--midnight-blue);
+    color: var(--champagne-gold);
+    font-weight: bold;
+}
+
+footer .socials {
+    font-family: Playfair Display;
+    background-color: var(--midnight-blue);
+    color: var(--champagne-gold);
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* MEDIA QUERY (xl) */
+@media (max-width: 1200px) {
+    .section {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+.cards {
+      flex-direction: row;
+      gap: 2rem;
+    }
+}
